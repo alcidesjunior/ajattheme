@@ -1,0 +1,116 @@
+  /*
+Theme Name: ajattheme
+Theme URI: http://localhost/wp
+Description: Tema teste para wordpress
+Author: Alcides Junior
+Author URI: http://ajatdesenvolvimento.com.br
+Version: 1.0
+*/
+body{
+  padding:0;
+  margin:0;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+}
+.clear{
+  clear: both;
+}
+/*div header*/
+.header{
+  height: 700px;
+  background: url(assets/images/bg-header.jpg) center top;
+  padding: 10px 0;
+}
+.header h1{
+  margin:0;
+}
+.header h1 a{
+  color: #fff;
+  text-decoration: none;
+}
+.header .infor{
+  padding-top: 120px;
+  margin:0 auto;
+  width: 800px;
+  text-align: center;
+}
+.header .infor h2{
+  color: #fff;
+  font-size: 30px;
+}
+.header .infor p{
+  color: #fff;
+  font-weight: lighter;
+  font-size: 20px;
+}
+.custom-botao{
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #1d173d;
+  color: #fff;
+  border-radius: 30px;
+  margin: 0 auto;
+  width: 339px;
+}
+/*div wrap*/
+.wrap{
+  margin:0 auto;
+  width: 960px;
+}
+/*BLOG*/
+.blog{
+  padding: 10px 0;
+}
+.blog h2{
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  color: #383838;
+}
+.list-posts{
+  float: left !important;
+}
+.list-posts img{
+  float: left;
+  width:30%;
+  height: 30%;
+  /*border: 1px solid black;*/
+  margin-bottom: 100px;
+}
+.segundo-post img{
+  float: right;
+  margin-left: 20px;
+  margin-right: 0;
+  width: 30%;
+  height: 30%;
+  /*border: 1px solid black;*/
+}
+.segundo-post .box-content-post{
+  float: left;
+}
+.box-content-post{
+  float: right;
+  width: 500px;
+  padding: 20px;
+}
+.box-content-post h2{
+  text-align: left;
+  margin-top: 0;
+}
+.box-content-post a{
+  display: inline-block;
+  width: 70px;
+}
+.galeria{
+  padding: 20px 0;
+  background: rgba(0,0,0,0.6);
+}
+.galeria h2, .galeria p{
+  text-align: center;
+  color: #fff;
+}
+.galeria img{
+  width: 232px;
+  height: 156px;
+}
