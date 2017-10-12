@@ -15,6 +15,98 @@ body{
 .clear{
   clear: both;
 }
+/* redes sociais*/
+@font-face {
+    font-family: 'si';
+    src: url('assets/fonts/socicon.eot');
+    src: url('assets/fonts/socicon.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/socicon.woff') format('woff'),
+         url('assets/fonts/socicon.ttf') format('truetype'),
+         url('assets/fonts/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(PATH_TO/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 39px;
+    height: 39px;
+    line-height: 39px;
+    font-size: 21px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 9px;
+    color: #ffffff;
+    background-color: #333333;
+}
+
+.soc a:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter:before {
+    content:'\e040';
+}
+.soc-facebook:before {
+    content:'\e041';
+}
+.soc-instagram:before {
+    content:'\e057';
+}
+
 /*div header*/
 .header{
   height: 700px;
@@ -113,4 +205,79 @@ body{
 .galeria img{
   width: 232px;
   height: 156px;
+}
+/*header pagina interna*/
+.header-page{
+  background: #000;
+}
+.header-page h1{
+  margin: 0;
+}
+.header-page h1 a{
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 0;
+  display: block;
+}
+.blog-page{
+  background: url(assets/images/bg-header.jpg) center top;
+  display: block;
+  height: 300px;
+}
+.blog-page h2{
+  padding-top: 140px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 30px;
+  margin:0;
+}
+.footer{
+  background: #1e2832;
+  padding: 30px 0;
+}
+.footer input, .footer textarea{
+  background: #29323c !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+.footer label{
+  display:none !important;
+}
+.footer #frm_field_15_container, .footer #frm_field_16_container{
+  float: left;
+  width: 479px;
+  clear: inherit !important;
+  margin-bottom: 1px !important;
+}
+.footer #frm_field_15_container{
+  margin-right: 1px !important;
+}
+.footer textarea{
+  height: 160px !important;
+}
+.footer .frm_submit button{
+  margin: 0 auto !important;
+  width: 200px !important;
+  background: #60d3b1 !important;
+  padding: 8px 20px !important;
+  border: none !important;
+  border-radius: 100px !important;
+  color: #fff !important;
+  display: block !important;
+}
+.footer h2{
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer-2{
+  background: #fff;
+  padding: 30px 0;
+}
+.footer-2 p{
+  float: left;
+}
+.footer-2 .soc{
+  float: right;
 }
